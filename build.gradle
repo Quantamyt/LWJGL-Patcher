@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.quantam'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    compileOnly 'org.projectlombok:lombok:1.18.34'
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.34'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+
+    // https://mvnrepository.com/artifact/org.ow2.asm/asm
+    implementation 'org.ow2.asm:asm:9.7'
+    implementation("org.ow2.asm:asm-commons:9.7")
+    implementation("commons-io:commons-io:2.16.0")
+}
+
+test {
+    useJUnitPlatform()
+}
