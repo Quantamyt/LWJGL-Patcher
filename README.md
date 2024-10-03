@@ -1,6 +1,7 @@
-# LWJGL Patcher
-
-LWJGL Patcher is designed to download, process, and merge LWJGL (Lightweight Java Game Library) modules. It provides a flexible and efficient way to create custom LWJGL distributions with specific modifications. Used for using LWJGL3 features in LWJGL2.
+<div align="center">
+    <h2>LWJGL Patcher</h2>
+    LWJGL Patcher is designed to download, process, and merge LWJGL (Lightweight Java Game Library) modules. It provides a flexible and efficient way to create custom LWJGL distributions with specific modifications. Used for using LWJGL3 features in LWJGL2.
+</div>
 
 ## Features
 
