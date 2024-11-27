@@ -13,7 +13,7 @@
 ## Requirements
 
 - Java 11 or higher
-- Maven (for building)
+- Gradle (for building)
 - Dependencies:
     - ASM (for bytecode manipulation)
 
@@ -39,17 +39,33 @@ try {
 }
 ```
 
-## Building
+## Building with Gradle
 
-To build the project, run:
+To build the project using Gradle, run:
 
+```bash
+./gradlew clean build
 ```
-mvn clean package
+
+This will compile the project and create a JAR file in the `build/libs` directory.
+
+## Dependencies
+
+In your `build.gradle` file, make sure to include the following dependencies:
+
+```gradle
+dependencies {
+    implementation 'org.lwjgl:lwjgl:3.3.3'
+    implementation 'org.lwjgl:lwjgl-opengl:3.3.3'
+    implementation 'org.lwjgl:lwjgl-glfw:3.3.3'
+    implementation 'org.ow2.asm:asm:9.2'  // For bytecode manipulation
+}
 ```
 
-This will create a JAR file in the `target` directory.
+Ensure that your Gradle version is compatible with Java 11 or higher.
 
 ## Modules
+
 Check out the [LWJGL3](https://www.lwjgl.org/customize) page to know more about **Modules**.
 
 **Copyright (c) 2023 Quantamyt**
